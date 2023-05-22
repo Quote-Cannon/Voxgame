@@ -7,7 +7,7 @@ public class HidingSpot : Interactable
     // private int a = 2;
     // private string b = "text";
 
-    protected override void Interact()
+    protected void Interact()
     {
         player.SetPhysicsProcess(!player.IsPhysicsProcessing());
         player.Visible = !player.Visible;

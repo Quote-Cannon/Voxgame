@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Interactable : Node2D
+public interface IInteractable : Node2D
 {
     // Declare member variables here. Examples:
     protected Player player;
@@ -26,8 +26,5 @@ public class Interactable : Node2D
             }
     }
 
-    protected virtual void Interact()
-    {
-
-    }
+    protected void Interact();
 }
